@@ -2,7 +2,9 @@
 
 Know thy neighbor's MAC addresses
 
-## The problem
+Copyright (C) 2016  Simon Leinen  <simon.leinen@gmail.com>
+
+## The Problem
 
 Your network connects to Internet Exchange Points (IXPs) to
 interconnect with other networks.  These peerings may be explicitly
@@ -29,6 +31,41 @@ This code requires
 * Perl
 * Net-SNMP
 * Standard MIB files installed for Net-SNMP, in particular IP-MIB
+
+## Usage
+
+The script currently doesn't take any arguments.  The header comment
+at the top of the script explains how to generate the necessary input
+files.  The bottom of the script contains subroutine calls to generate
+MAC-to-AS mapping files for various IXPs.  Adapt these commands to
+your local needs and run the script without arguments.
+
+## Contributions
+
+If you're interested in running this script on your network, please
+let me know.  I'm willing to make the script more generally and
+readily useful to others.  For this I need to know more about how
+others might use it.
+
+Of course bug reports - with or without fixes - and other code
+contributions are welcome.  If you're familiar with GitHub, feel free
+to fork the repo and send Pull Requests.  If not, just send code in
+any form.
+
+## License
+
+This program is free software: you can redistribute it and/or modify
+it under the terms of the GNU Affero General Public License as
+published by the Free Software Foundation, either version 3 of the
+License, or (at your option) any later version.
+
+This program is distributed in the hope that it will be useful,
+but WITHOUT ANY WARRANTY; without even the implied warranty of
+MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+GNU Affero General Public License for more details.
+
+You should have received a copy of the GNU Affero General Public License
+along with this program.  If not, see <http://www.gnu.org/licenses/>.
 
 ## Author
 
